@@ -1,3 +1,270 @@
-<p>
-  bids works!
-</p>
+<!-- <div class="row">
+  <div class="col-md-12">
+  
+<button type="button" class="btn btn-default pull-right"><a routerLink="/bnew" routerLinkActive="active"><span class="glyphicon glyphicon-plus"></span> Create NewBid</a>
+</button>
+</div>
+</div> -->
+
+<div class="container">
+
+
+    <!-- <div class="row">
+        <div class="media-footer">
+            <a href="#pablo" class="btn btn-primary btn-wd pull-right" routerLink="/navbar/bnew" routerLinkActive="active">+ Create Bid<div class="ripple-container"></div></a>
+        </div>
+    </div> -->
+
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <ul class="nav nav-pills nav-pills-rose">
+                <li class="active"><a href="#pill1" data-toggle="tab" aria-expanded="true">Bids in Draft</a></li>
+                <li class=""><a href="#pill2" data-toggle="tab" aria-expanded="false">Bids In-Progress</a></li>
+                <li class=""><a href="#pill3" data-toggle="tab" aria-expanded="false">Closed</a></li>
+            </ul>
+            <div class="tab-content tab-space">
+                <div class="tab-pane active" id="pill1">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+
+                                    <th class="text-center">Name</th>
+                                    <th class="text-center">Industry Type</th>
+                                    <th class="text-center">Location</th>
+                                    <th class="text-center">Open Date</th>
+                                    <th class="text-center">Close Date</th>
+                                    <th class="text-center">Bid Tokens</th>
+                                    <th class="text-center">Open Bid?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="text-center"><a [routerLink]="['/home/bopen',1]"> Industries</a>
+                                    </td>
+                                    <td class="text-center">Manufacturing</td>
+                                    <td class="text-center">Chennai</td>
+                                    <td class="text-center">06/10/2017</td>
+                                    <td class="td-actions text-center">
+                                        12/10/2017
+                                    </td>
+                                    <td class="text-center">100</td>
+                                    <td class="text-center"><button class="btn btn-primary btn-round" [routerLink]="['/home/bdraft',1]"> Bid<div class="ripple-container"></div></button></td>
+                                </tr>
+                                <tr>
+
+                                    <td class="text-center">XUZ School
+
+                                    </td>
+                                    <td class="text-center">School</td>
+                                    <td class="text-center">Kanchipuram</td>
+                                    <td class="text-center">07/10/2017</td>
+                                    <td class="td-actions text-center">
+                                        13/10/2017
+                                    </td>
+                                    <td class="text-center">80</td>
+                                    <td class="text-center"><button class="btn btn-primary btn-round"> Bid<div class="ripple-container"></div></button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pill2">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+
+                                    <th class="text-center">Name</th>
+                                    <th class="text-center">Industry Type</th>
+                                    <th class="text-center">Location</th>
+                                    <th class="text-center">Open Date</th>
+                                    <th class="text-center">Close Date</th>
+                                    <th class="text-center"># of Bids</th>
+                                    <th class="text-center">Edit Bid?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="text-center">ABC Industries
+                                    </td>
+                                    <td class="text-center">Manufacturing</td>
+                                    <td class="text-center">Chennai</td>
+                                    <td class="text-center">06/10/2017</td>
+                                    <td class="td-actions text-center">
+                                        12/10/2017
+                                    </td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center"><button class="btn btn-primary btn-round">End Bid<div class="ripple-container"></div></button></td>
+                                </tr>
+                                <tr>
+
+                                    <td class="text-center">XUZ School
+
+                                    </td>
+                                    <td class="text-center">School</td>
+                                    <td class="text-center">Kanchipuram</td>
+                                    <td class="text-center">07/10/2017</td>
+                                    <td class="td-actions text-center">
+                                        13/10/2017
+                                    </td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center"><button class="btn btn-primary btn-round">End Bid<div class="ripple-container"></div></button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pill3">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+
+                                    <th class="text-center">Name</th>
+                                    <th class="text-center">Industry Type</th>
+                                    <th class="text-center">Location</th>
+                                    <th class="text-center">Open Date</th>
+                                    <th class="text-center">Close Date</th>
+                                    <th class="text-center"># of Bids</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="text-center">ABC Industries
+                                    </td>
+                                    <td class="text-center">Manufacturing</td>
+                                    <td class="text-center">Chennai</td>
+                                    <td class="text-center">06/10/2017</td>
+                                    <td class="td-actions text-center">
+                                        12/10/2017
+                                    </td>
+                                    <td class="text-center"><a href="" data-toggle="modal" data-target="#myModal">5</a></td>
+
+                                </tr>
+                                <tr>
+
+                                    <td class="text-center">XUZ School
+
+                                    </td>
+                                    <td class="text-center">School</td>
+                                    <td class="text-center">Kanchipuram</td>
+                                    <td class="text-center">07/10/2017</td>
+                                    <td class="td-actions text-center">
+                                        13/10/2017
+                                    </td>
+                                    <td class="text-center"><a href="" data-toggle="modal" data-target="#myModal">5</a></td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                            <i class="material-icons">clear</i>
+                                                        </button>
+                                    <h4 class="modal-title">Closed Bids</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="table-responsive text-muted">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+
+                                                    <th class="text-center">Insurer Name
+                                                    </th>
+                                                    <th class="text-center">Contact Name
+                                                    </th>
+                                                    <th class="text-center">Contact Email
+                                                    </th>
+                                                    <th class="text-center">Contact Phone
+                                                    </th>
+                                                    <th class="text-center">Bid Date
+                                                    </th>
+                                                    <th class="text-center">Download Bid
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+
+                                                    <td class="text-center">XYZ Insurance
+
+                                                    </td>
+                                                    <td class="text-center">John Peter
+                                                    </td>
+                                                    <td class="text-center"><a href="">@xyz.com</a>
+                                                    </td>
+                                                    <td class="text-center">9876767875
+                                                    </td>
+                                                    <td class="td-actions text-center">
+                                                        12/10/2017
+
+
+                                                    </td>
+                                                    <td class="text-center"><button class="btn btn-primary btn-round">Download<div class="ripple-container"></div></button></td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td class="text-center">ABC Insurance
+
+
+                                                    </td>
+                                                    <td class="text-center">Suresh R
+                                                    </td>
+                                                    <td class="text-center"><a href="">suresh@abc.com
+                                                                        </a></td>
+                                                    <td class="text-center">9897878788
+                                                    </td>
+                                                    <td class="td-actions text-center">
+                                                        13/10/2017
+                                                    </td>
+                                                    <td class="text-center"><button class="btn btn-primary btn-round">Download<div class="ripple-container"></div></button></td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>
